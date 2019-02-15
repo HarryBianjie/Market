@@ -28,7 +28,7 @@
 - [设置`gaiacli`](#setting-up-gaiacli)
 - [状态查询](#querying-the-state)
 - [发起交易](#sending-transactions)
-    + [[关于gas费和手续费](#a-note-on-gas-and-fees)
+    + [关于gas费和手续费](#a-note-on-gas-and-fees)
     + [抵押Atom通证 & 提取奖励](#bonding-atoms-and-withdrawing-rewards)
     + [参与链上治理](#participating-in-governance)
     + [从一台离线电脑上签署交易](#signing-transactions-from-an-offline-computer)
@@ -141,7 +141,7 @@ Cosmos地址是一个以可读词开头的字符串(比如`cosmos10snjt8dmpr5my0
 
 接下来，请点击[这里](#using-a-ledger-device)来学习如何生成一个账户。
 
-#### 在电脑山操作
+#### 在电脑上操作
 
 ::: 警告
 
