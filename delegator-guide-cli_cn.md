@@ -17,29 +17,21 @@
 请务必谨慎行事！
 
 ## 目录
-
-- [委托人指南 (CLI)](#%E5%A7%94%E6%89%98%E4%BA%BA%E6%8C%87%E5%8D%97-cli)
-  - [目录](#table-of-contents)
-  - [安装 `gaiacli`](#%E5%AE%89%E8%A3%85-gaiacli)
-  - [Cosmos账户](#cosmos-accounts-cosmos%E8%B4%A6%E6%88%B7)
-    - [Restoring an account from the fundraiser 通过募资人恢复一个账户](#restoring-an-account-from-the-fundraiser-%E9%80%9A%E8%BF%87%E5%8B%9F%E8%B5%84%E4%BA%BA%E6%81%A2%E5%A4%8D%E4%B8%80%E4%B8%AA%E8%B4%A6%E6%88%B7)
-      - [On a ledger device 恢复到一个数字钱包设备](#on-a-ledger-device-%E6%81%A2%E5%A4%8D%E5%88%B0%E4%B8%80%E4%B8%AA%E6%95%B0%E5%AD%97%E9%92%B1%E5%8C%85%E8%AE%BE%E5%A4%87)
-      - [On a computer 在计算机上](#on-a-computer-%E5%9C%A8%E8%AE%A1%E7%AE%97%E6%9C%BA%E4%B8%8A)
-    - [Creating an account 创建一个账户](#creating-an-account-%E5%88%9B%E5%BB%BA%E4%B8%80%E4%B8%AA%E8%B4%A6%E6%88%B7)
-      - [Using a ledger device 使用数字钱包设备](#using-a-ledger-device%08-%E4%BD%BF%E7%94%A8%E6%95%B0%E5%AD%97%E9%92%B1%E5%8C%85%E8%AE%BE%E5%A4%87)
-      - [Using a computer 用一台电脑](#using-a-computer-%E7%94%A8%E4%B8%80%E5%8F%B0%E7%94%B5%E8%84%91)
-  - [Accessing the Cosmos Hub network 访问Cosmos Hub网络](#accessing-the-cosmos-hub-network-%08%E8%AE%BF%E9%97%AEcosmos-hub%E7%BD%91%E7%BB%9C)
-    - [Running your own full-node 运行您自己的全功能节点](#running-your-own-full-node-%E8%BF%90%E8%A1%8C%E6%82%A8%E8%87%AA%E5%B7%B1%E7%9A%84%E5%85%A8%E5%8A%9F%E8%83%BD%E8%8A%82%E7%82%B9)
-    - [Connecting to a remote full-node 连接到一个远端全功能节点](#connecting-to-a-remote-full-node-%08%E8%BF%9E%E6%8E%A5%E5%88%B0%E4%B8%80%E4%B8%AA%E8%BF%9C%E7%AB%AF%E5%85%A8%E5%8A%9F%E8%83%BD%E8%8A%82%E7%82%B9)
-  - [Setting up `gaiacli` 设置 `gaiacli`](#setting-up-gaiacli-%08%E8%AE%BE%E7%BD%AE-gaiacli)
-  - [Querying the state 状态查询](#querying-the-state-%E7%8A%B6%E6%80%81%E6%9F%A5%E8%AF%A2)
-  - [Sending Transactions 发起交易](#sending-transactions-%E5%8F%91%E8%B5%B7%E4%BA%A4%E6%98%93)
-    - [A note on gas and fees 关于gas 和 fee](#a-note-on-gas-and-fees-%08%E5%85%B3%E4%BA%8Egas-%E5%92%8C-fee)
-    - [Bonding Atoms and Withdrawing rewards 抵押Atom通证和提取奖励](#bonding-atoms-and-withdrawing-rewards-%E6%8A%B5%E6%8A%BCatom%E9%80%9A%E8%AF%81%E5%92%8C%E6%8F%90%E5%8F%96%E5%A5%96%E5%8A%B1)
-  - [Participating in governance 参与链上治理](#participating-in-governance-%E5%8F%82%E4%B8%8E%E9%93%BE%E4%B8%8A%E6%B2%BB%E7%90%86)
-      - [Primer on governance 链上治理入门](#primer-on-governance-%E9%93%BE%E4%B8%8A%E6%B2%BB%E7%90%86%E5%85%A5%E9%97%A8)
-      - [In practice 实践练习](#in-practice-%E5%AE%9E%E8%B7%B5%E7%BB%83%E4%B9%A0)
-    - [Signing transactions from an offline computer 从一台离线电脑上签署交易](#signing-transactions-from-an-offline-computer-%08%E4%BB%8E%E4%B8%80%E5%8F%B0%E7%A6%BB%E7%BA%BF%E7%94%B5%E8%84%91%E4%B8%8A%E7%AD%BE%E7%BD%B2%E4%BA%A4%E6%98%93)
+    
+- [安装 `gaiacli`](#installing-gaiacli)
+- [Cosmos账户](#cosmos-accounts)
+    + [通过募资人恢复一个账户](#restoring-an-account-from-the-fundraiser)
+    + [创建一个账户](#creating-an-account)
+- [访问Cosmos Hub网络](#accessing-the-cosmos-hub-network)
+    + [运行您自己的全节点](#running-your-own-full-node)
+    + [连接到一个远程全节点](#connecting-to-a-remote-full-node)
+- [设置`gaiacli`](#setting-up-gaiacli)
+- [状态查询](#querying-the-state)
+- [发起交易](#sending-transactions)
+    + [[关于gas费和手续费](#a-note-on-gas-and-fees)
+    + [抵押Atom通证 & 提取奖励](#bonding-atoms-and-withdrawing-rewards)
+    + [参与链上治理](#participating-in-governance)
+    + [从一台离线电脑上签署交易](#signing-transactions-from-an-offline-computer)
 
 ## 安装 `gaiacli` 
 
@@ -66,7 +58,6 @@
 
 ## Cosmos账户
 
-At the core of every Cosmos account, there is a seed, which takes the form of a 12 or 24-words mnemonic. From this mnemonic, it is possible to create any number of Cosmos accounts, i.e. pairs of private key/public key. This is called an HD wallet (see [BIP32](https://github.com/bitcoin/bips/blob/master/bip-0032.mediawiki) for more information on the HD wallet specification).
 每个Cosmos账户的核心基础是一个包含12或24个词的助记词组，通过这个助记词可以生成无数个Cosmos账户，例如，一组私钥/公钥对。这被称为一个硬件钱包（跟多硬件钱包相关说明请参见[BIP32](https://github.com/bitcoin/bips/blob/master/bip-0032.mediawiki)）  
 
 ```
@@ -173,7 +164,7 @@ gaiacli keys add <yourKeyName> --recover
 - 您可以通过增加 `--account` 标志来指定您账户生成的路径 (`0`, `1`, `2`, ...)， `0` 是缺省值。
 
 
-### Creating an account 创建一个账户
+### 创建一个账户
 
 
 创建账户前，您需要先安装`gaiacli`，同时，您需要知道你希望在哪里保存和使用您的私钥。 最好的办法是把他们保存在一台没有上网的电脑或者一个硬件钱包设备里面。 将私钥保存在一台联网的电脑里面比较危险，任何人通过网络攻击都有可能获取您的私钥，进而盗取您的资产。 
@@ -274,7 +265,7 @@ gaiacli keys add <yourKeyName> --recover --account 1
 如果您不想或没有能力运行一个全节点，您也可以连接到其他人的全节点。您需要谨慎的选择一个可信的运营商，因为恶意的运营商往往会向您反馈错误的查询结果，或者对您的交易进行监控。 然而，他们永远也无法盗取您的资产，因为您的私钥仅保持在您的本地计算机或者钱包设备中。 验证人，钱包供应商或者交易所是可以提供全节点的运营商。 
 
 
-连接到其他人提供的全节点，你需要一个全节点地址，如`https://77.87.106.33:26657`。 这个地址是您的供应商提供的一个可信的接入地址。你会在下一节中用到这个地址。 
+连接到其他人提供的全节点，你需要一个全节点地址，如`https://77.87.106.33:26657`。这个地址是您的供应商提供的一个可信的接入地址。你会在下一节中用到这个地址。 
 
 ## 设置 `gaiacli`
 
@@ -369,7 +360,6 @@ gaiacli query gov proposals --status voting_period
 gaiacli query gov proposal <proposalID>
 ```
 
-For more commands, just type:
 需要了解跟多的命令，只需要用：
 
 ```bash
