@@ -18,7 +18,7 @@
 
 ## 目录
     
-- [安装 `gaiacli`](#installing-gaiacli)
+- [安装 `gaiacli`](#安装-gaiacli)
 - [Cosmos账户](#cosmos-accounts)
     + [通过募资人恢复一个账户](#restoring-an-account-from-the-fundraiser)
     + [创建一个账户](#creating-an-account)
