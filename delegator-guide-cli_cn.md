@@ -19,19 +19,19 @@
 ## 目录
     
 - [安装 `gaiacli`](#安装-gaiacli)
-- [Cosmos账户](#cosmos-accounts)
-    + [通过募资人恢复一个账户](#restoring-an-account-from-the-fundraiser)
-    + [创建一个账户](#creating-an-account)
-- [访问Cosmos Hub网络](#accessing-the-cosmos-hub-network)
-    + [运行您自己的全节点](#running-your-own-full-node)
-    + [连接到一个远程全节点](#connecting-to-a-remote-full-node)
-- [设置`gaiacli`](#setting-up-gaiacli)
-- [状态查询](#querying-the-state)
-- [发起交易](#sending-transactions)
-    + [关于gas费和手续费](#a-note-on-gas-and-fees)
-    + [抵押Atom通证 & 提取奖励](#bonding-atoms-and-withdrawing-rewards)
-    + [参与链上治理](#participating-in-governance)
-    + [从一台离线电脑上签署交易](#signing-transactions-from-an-offline-computer)
+- [Cosmos账户](#Cosmos账户)
+    + [通过募资人恢复一个账户](#通过募资人恢复一个账户)
+    + [创建一个账户](#创建一个账户)
+- [访问Cosmos Hub网络](#访问Cosmos Hub网络)
+    + [运行您自己的全节点](#运行您自己的全节点)
+    + [连接到一个远程全节点](#连接到一个远程全节点)
+- [设置`gaiacli`](#设置`gaiacli`)
+- [状态查询](#状态查询)
+- [发起交易](#发起交易)
+    + [关于gas费和手续费](#关于gas费和手续费)
+    + [抵押Atom通证 & 提取奖励](#抵押Atom通证 & 提取奖励)
+    + [参与链上治理](#参与链上治理)
+    + [从一台离线电脑上签署交易](#从一台离线电脑上签署交易)
 
 ## 安装 `gaiacli` 
 
